@@ -3,7 +3,7 @@ import os
 from wonderwords import RandomWord
 
 
-def print_hi(name):
+def generate():
     r = RandomWord()
     for i in range(30):
         word = r.word(include_parts_of_speech=["nouns"])
@@ -13,8 +13,5 @@ def print_hi(name):
         time.sleep(5)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    generate()
